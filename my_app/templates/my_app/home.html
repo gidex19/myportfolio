@@ -1,0 +1,490 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block header-content %}
+<div class="container" >
+
+    <div class="row m-1" >
+        <div class="col-11 col-sm-11 col-md-6 col-lg-6 header-text-div pl-2"
+             data-aos="fade-up-right" style="border-left: 2px solid #00ffbb; " >
+
+
+            <p class="med-text smoke-text"  ><b>Hi, my name is</b></p>
+
+            <h3 class="hyper-bold grey-text p-0">Ozuluoha Gideon</h3>
+            <div class="col-10 col-sm-10 col-md-8 col-lg-8 smoke-text p-0"  >
+                    <p>I’m a fullstack developer specialized in building responsive websites and robust
+                        cross-platform mobile apps using cutting edge technologies. </p>
+
+
+            </div>
+            <div style="margin-top: 40px;">
+
+                <a href="#works" class="button-large green-b fade-text mt-4" >See recent works </a>
+            </div>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 header-img-div " data-aos="fade-up-left" >
+            <div >
+
+            <img style="width: 80%; height: 80%; " src="{% static 'my_app/images/sample.png' %}">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+{% endblock header-content %}
+
+
+
+
+{% block main-content %}
+
+<div class="container" data-aos="fade-right" id="about">
+
+
+    <div class="row mb-4 ml-1" style="margin-top: 150px;">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9 m-auto">
+        <div class="row">
+        <div class="col-11 col-sm-11 col-md-8 col-lg-8 mt-4 m-auto " style="border-left: 2px solid #00ffbb;" >
+            <p class="mini-bold grey-text">
+<!--                    <i class="fas fa-address-card"></i>-->
+                <span style="background-color: #00ffbb; color: black;" class="badge rounded-circle mr-1"><b> 1</b></span>
+                <b>About Me</b>
+            </p>
+
+            <p class="smoke-text mini-p">
+                I am a fullstack developer focused on solving real-life challenges by leveraging on the power of software devlopment.
+            </p>
+            <p class="smoke-text mini-p">
+                I am enthusiastic and passionate, apt and focused with a keen attention to detail as I can confidently take on projects alone or work effectively with a
+                team of developers. For me, the learning never ends. I set realistic goals and I do everything possible to achieve them.
+            </p>
+            <p class="smoke-text mini-p">
+                I've had the opportunity to work with a number of high profile tech companies and clients over the years.
+                The compilation of these experiences has helped build my leadership and problem-solving skills.
+            </p>
+            <p><i class="fas fa-smile-wink fa-2x" style="color: yellow;"></i></p>
+            <p class="mini-p smoke-text" >
+                Offering my skills to the development of your company or project is one journey I am definitely willing to embark
+                on by building irresistible mobile and web apps powered with innovative functionalities and sleek UI/UX Designs,
+                REST APIs and product algorithms.
+            </p>
+
+        </div>
+
+
+        </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<div style="margin-top: 140px;">
+
+</div>
+
+
+<div class="container " data-aos="fade-up" id="skills">
+    <div class="row mt-4 m-auto" >
+        <div class="col-12 col-sm-12 col-md-10 col-lg-9 m-auto mt-4 ">
+            <div class="row m-auto" >
+
+<!---->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-auto" style="background-color: #0a1930;" >
+                    <p class="mini-bold grey-text text-left">
+<!--                    <i class="fas fa-address-card"></i>-->
+                <span style="background-color: #00ffbb; color: black;" class="badge rounded-circle mr-1"><b> 2</b></span>
+                <b>Skills</b>
+            </p>
+                    <div class="row m-auto">
+
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                            <i class="devicon-html5-plain-wordmark "></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                            <i class="devicon-css3-plain-wordmark"></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                           <i class="devicon-bootstrap-plain colored"></i>
+                        </p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                            <i class="devicon-tailwindcss-original-wordmark colored"></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;"><i class="devicon-javascript-plain colored"></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;"><i class="devicon-jquery-plain colored"></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                            <i class="devicon-python-plain-wordmark colored"></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                            <i class="devicon-django-plain-wordmark "></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                            <i class="devicon-dart-plain-wordmark colored"></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                            <i class="devicon-flutter-plain colored"></i></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                           <i class="devicon-firebase-plain-wordmark colored"></i>
+                        </p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-2 m-auto">
+                        <p class="green-text text-center" style="font-size: 60px;">
+                           <i class="devicon-git-plain-wordmark colored"></i>
+                        </p>
+                    </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div style="margin-top: 120px;" id="works">
+
+</div>
+<div class="container"  >
+
+    <div class="row m-auto mt-4">
+
+        <div class="col-12 col-sm-12 col-md-11 col-lg-11 m-auto" data-aos="fade-down-right">
+            <p class="mini-bold grey-text">
+<!--                    <i class="fas fa-address-card"></i>-->
+                <span style="background-color: #00ffbb; color: black;" class="badge rounded-circle mr-1"><b> 3</b></span>
+                <b>Works</b>
+            </p>
+        </div>
+
+
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 m-auto"  data-aos="fade-down-right" style="" >
+
+        <div class="p-3" >
+
+        <p class="yellow-text m-0">
+            <i class="fas fa-project-diagram"></i><b>   Project</b>
+
+        </p>
+        <p class="text-white " style="font-size: 17px;"> Signacode E-learning </p>
+        <div>
+            <div class="project-image" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden; position: relative;
+                border-left: 2px solid yellow">
+                <img class="zoom project-img" src="{% static 'my_app/images/signacode.png' %}" style="width: 100%; height: 100%;
+                 object-fit: cover; ">
+
+            </div>
+            <div class="">
+                <p class="yellow-text p-1">HTML | CSS | Django | Vanilla JS</p>
+
+            </div>
+            <p class="grey-text">An e-learning web application where students can purchase and watch courses.
+                The payment gateway is implemented using Paystack</p>
+            <a href="https://www.signacode.tech" class="button-normal yellow-b"> Visit Page</a>
+        </div>
+        </div>
+
+    </div>
+
+
+
+      <div class="col-12 col-sm-12 col-md-5 col-lg-5 m-auto " data-aos="fade-down-left"  >
+
+        <div class="p-3" >
+
+        <p class="green-text m-0">
+            <i class="fas fa-project-diagram"></i><b>   Project</b>
+
+        </p>
+        <p class="text-white " style="font-size: 17px;"> Examboot CBT </p>
+        <div>
+            <div class="project-image" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden; position: relative;
+                border-left: 2px solid #00ffbb;">
+                <img class="zoom project-img" src="{% static 'my_app/images/examboot.png' %}" style="width: 100%; height: 100%;
+                 object-fit: cover; ">
+
+            </div>
+            <div class="">
+                <p class="green-text p-1">HTML | CSS | Django | Vanilla JS</p>
+
+            </div>
+            <p class="grey-text">A Web app that prepares students for JAMB Examinations by presenting them with a computer based
+            test covering over 14 subjects to pick from. Students get a score after taking a test and can view corrections
+                to failed questions.</p>
+            <a target="_blank" href="https://jambcbtprep.pythonanywhere.com" class="button-normal green-b"> Visit Page</a>
+        </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<div style="margin-top: 80px;">
+
+</div>
+
+<div class="container" >
+    <div class="row m-auto mt-4" >
+
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 m-auto" style="" data-aos="fade-right" >
+
+        <div class="p-3" >
+
+        <p class="green-text m-0">
+            <i class="fas fa-project-diagram"></i><b>   Project</b>
+
+        </p>
+        <p class="text-white " style="font-size: 17px;"> Fluttergram </p>
+        <div>
+            <div class="project-image" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden; position: relative;
+                border-left: 2px solid #00ffbb;">
+                <img class="zoom project-img" src="{% static 'my_app/images/fluttergram.jpg' %}" style="width: 100%; height: 100%;
+                 object-fit: cover; ">
+
+            </div>
+            <div class="">
+                <p class="green-text p-1">Dart | Flutter | Firebase</p>
+
+            </div>
+            <p class="grey-text">A cross-platform social media mobile app with features such as posting of pictures and videos, commenting on posts,
+            following of users, viewing timelines, editing profile and many others. </p>
+            <a href="#" class="button-normal green-b"> Visit Page</a>
+        </div>
+        </div>
+
+    </div>
+
+
+
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 m-auto" style="" data-aos="fade-left">
+
+        <div class="p-3" >
+
+        <p class="yellow-text m-0">
+            <i class="fas fa-project-diagram"></i><b>   Project</b>
+
+        </p>
+        <p class="text-white " style="font-size: 17px;"> Transport Booking System</p>
+        <div>
+            <div class="project-image" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden; position: relative;
+                border-left: 2px solid yellow;">
+                <img class="zoom project-img" src="{% static 'my_app/images/transportweb.png' %}" style="width: 100%; height: 100%;
+                 object-fit: cover; ">
+
+            </div>
+            <div class="">
+                <p class="yellow-text p-1">HTML | CSS | Django | Vanilla JS</p>
+
+            </div>
+            <p class="grey-text">A transport booking website where users can book tickets from their comfort zones, pay online,
+                reserve a bus seat, verify tickets using reference code and lots more</p>
+            <a href="#" class="button-normal yellow-b"> Visit Page</a>
+        </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+<div style="margin-top: 100px;">
+
+</div>
+
+
+
+
+<div class="container" >
+    <div class="row m-auto mt-4" >
+
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 m-auto" style="" data-aos="fade-up" >
+
+        <div class="p-3" >
+
+        <p class="green-text m-0">
+            <i class="fas fa-project-diagram"></i><b>   Project</b>
+
+        </p>
+        <p class="text-white " style="font-size: 17px;"> School Management System </p>
+        <div>
+            <div class="project-image" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden; position: relative;
+                border-left: 2px solid #00ffbb;">
+                <img class="zoom project-img" src="{% static 'my_app/images/sims.png' %}" style="width: 100%; height: 100%;
+                 object-fit: cover; ">
+
+            </div>
+            <div class="">
+                <p class="green-text p-1">HTML | CSS | Django | Vanilla JS</p>
+
+            </div>
+            <p class="grey-text">A web based school information management system that holds the record of all students in the school.
+                 Students can log in to the eportal where he/she can pay tuition fees online, get payment reciepts, viewable school results (PDF format)
+                 for each term and get tutor's information.
+            </p>
+            <a href="https://gidex2019.pythonanywhere.com" class="button-normal green-b"> Visit Page</a>
+        </div>
+        </div>
+
+    </div>
+
+
+
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 m-auto" style="" data-aos="fade-up">
+
+        <div class="p-3" >
+
+        <p class="yellow-text m-0">
+            <i class="fas fa-project-diagram"></i><b>   Project</b>
+
+        </p>
+        <p class="text-white " style="font-size: 17px;"> Food Delivery App</p>
+        <div>
+            <div class="project-image" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden; position: relative;
+                border-left: 2px solid yellow;">
+                <img class="zoom project-img" src="{% static 'my_app/images/food_delivery.jpg' %}" style="width: 100%; height: 100%;
+                 object-fit: cover; ">
+
+            </div>
+            <div class="">
+                <p class="yellow-text p-1">Dart | Flutter | Firebase </p>
+
+            </div>
+            <p class="grey-text"> A cross-platform food delivery mobile app that takes food orders to be delivered to customers.
+                There are different restaurant options with each restaurant having varieties to select from. The App was built using
+                Flutter and Google Firebase.   </p>
+            <a href="#" class="button-normal yellow-b"> Visit Page</a>
+        </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+
+<div style="margin-top: 120px;">
+
+</div>
+
+<div class="container" id="contact">
+    <div class="row m-auto">
+        <div class="col-12 col-sm-12 col-md-7 col-lg-7 m-auto" >
+        <p class="mini-bold grey-text text-center">
+<!--                    <i class="fas fa-address-card"></i>-->
+                <span style="background-color: #00ffbb; color: black;" class="badge rounded-circle mr-1"><b> 4</b></span>
+                <b>Contact </b>
+            </p>
+            <p class="text-white m-auto text-center" style="">I am currently on the lookout to work with startups, companies,
+            or individuals where my skills(in collaboration with my teammates) will be valued and given an opportunity to find expression
+                to disrupt the market to our favour.</p>
+            <p class="text-white m-auto text-center">Kindly reach out to me for a conversation via any of the platforms below.</p>
+        </div>
+        <div style="margin-top: 200px;">
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6  m-auto mt-4" style="text-align: center; " data-aos="zoom-in-up">
+        <div class="row m-auto">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3  p-1 mt-4">
+            <a href="https://wa.me/23408164036257" class="text-center m-auto "><i class="fab fa-whatsapp fa-4x"></i></a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-4">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100009466883816" class="text-center m-auto "><i class="fab fa-facebook fa-4x"></i></a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-4">
+            <a target="_blank" href="mailto:ozuluohagideon@gmail.com" class="text-center m-auto "><i class="fas fa-at fa-4x"></i></a>
+
+        </div>
+        <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-4">
+            <a target="_blank" href="https://www.linkedin.com/in/gideon-ozuluoha-736799166/" class="text-center m-auto "><i class="fab fa-linkedin fa-4x"></i></a>
+
+        </div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-4">
+            <a target="_blank" href="https://twitter.com/gidexdev" class="text-center m-auto "><i class="fab fa-twitter fa-4x"></i></a>
+
+        </div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-4">
+            <a target="_blank" href="https://github.com/gidex19" class="text-center m-auto "><i class="fab fa-github fa-4x"></i></a>
+
+        </div>
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 p-1 mt-4">
+            <a target="_blank" href="https://t.me/gidexdev" class="text-center m-auto "><i class="fab fa-telegram fa-4x"></i></a>
+
+        </div>
+<!--        <div class="col-4 col-sm-4 col-md-3 col-lg-3  p-1">-->
+<!--            <a href="#" class="text-center m-auto ">-->
+<!--                <img style="width: 50%; height: 50%; color: cornflowerblue; " src="{% static 'my_app/images/twitter-brands.svg' %}"></a>-->
+<!--        </div>-->
+
+
+        </div>
+        </div>
+        </div>
+
+</div>
+
+
+<div style="margin-bottom: 130px;">
+
+</div>
+
+
+
+{% endblock main-content %}
+
+
+
+{% block js %}
+    <script>
+
+        $(document).ready(function () {
+
+            AOS.init({
+            duration: 700
+            });
+
+
+        });
+    </script>
+
+{% endblock js %}
+
